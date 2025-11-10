@@ -1,5 +1,5 @@
 #1 
-# printed: x = {"key_a": "value1", key_b": 150} False
+# printed: x = {"key_a": "value1", key_b": 150, "key_d": 50} False
 
 #2 
 # printed: 120,60?
@@ -9,9 +9,9 @@ def get_user_bio(user):
     bio = user["bio"]
     return bio
 
-get_user_bio({"username": "coder", "bio": "Python enthusiast"})
-get_user_bio({"username": "newbie", "bio": "Beginner coder!"})
-get_user_bio({"username": "code.er", "bio": "10 years of Python experience"})  
+# get_user_bio({"username": "coder", "bio": "Python enthusiast"})
+# get_user_bio({"username": "newbie", "bio": "Beginner coder!"})
+# get_user_bio({"username": "code.er", "bio": "10 years of Python experience"})  
     
 
     
