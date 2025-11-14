@@ -1,0 +1,35 @@
+def calculate_cart_total(*prices):
+     """Calculate total for any # of items
+     Parameters: variable num of price vals
+     Returns: total sum of all prices rounded to 2 decimal
+     """
+     #check if cart is empty
+     if not prices:
+         return 0.00
+     #sum all prices
+     subtotal = sum(prices)
+     # round to 2 decimal and return
+     return round(subtotal, 2)
+ 
+ 
+    print(f"Empty Cart: ${calculate_cart_total()}")
+    print(f"1 Item : ${calculate_cart_total(19.99)}")
+    print(f"3 Items: ${calculate_cart_total(19.99, 12.34, 2.99)}")
+    print(f"4 Items: ${calculate_cart_total(19.99, 12.34, 2.99,14.22)}")
+ 
+ 
+ 
+def create_order(customer_name, **items):
+    """Create an order with any menu item"""
+    order = {"customer": customer_name
+        "items": items
+        "item_count": len(items)}  
+    return order
+
+
+
+#diff customers, diff orders
+order1 = create_order("Alex",pizza=2, soda=1, fries=2, nuggets=6) 
+order2 = create_order("Alice",pizza=2, soda=1, wings=8) 
+print(f"Order 1: {order1}")
+print(f"Order 2: {order2}")
