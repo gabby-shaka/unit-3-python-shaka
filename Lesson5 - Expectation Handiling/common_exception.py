@@ -17,6 +17,16 @@
 # print(total)
 # total = 10
 
-#  Syntax Error
+#6 - TypeError
+#print("hello" + 5)
+
+#7 Syntax Error
 # for i in range (5)
 # print i 
+
+
+#8 - Attribute Error
+# x = 5
+# x.append(3)
+
+#9 - ModuleNotFound Error
