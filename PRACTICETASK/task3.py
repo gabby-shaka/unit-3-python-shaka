@@ -31,7 +31,7 @@ def playlist_stats(*durations):
     Examples:
         >>> playlist_stats(180, 210, 240, 195)
         (825, 4, 206.25)
-        
+
         >>> playlist_stats(300, 300)
         (600, 2, 300.0)
         
@@ -42,7 +42,13 @@ def playlist_stats(*durations):
     # Hint 1: Check if durations is empty FIRST (if not durations:)
     # Hint 2: Use sum() and len() for calculations
     # Hint 3: Return three values separated by commas
-    pass
+
+def playlist_stats(*durations):
+    if not durations:
+        return (0, 0, 0.0)
+    total = sum(durations)
+    count = len(durations)
+    average = total / count
 
 
 # =============================================================================
