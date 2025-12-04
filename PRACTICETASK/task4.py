@@ -47,16 +47,15 @@ INSTRUCTIONS:
     # Hint 4: Return a dictionary with "name", "songs", and "total_plays"
     
     def build_playlist(playlist_name, **songs):
-        
-  try:
-        total_plays = sum(songs.values())
-    except:
-        total_plays = 0
+        try:
+         total_plays = sum(songs.values())
+        except:
+            total_plays = 0
     
-    return {
-        "name": playlist_name,
-        "songs": songs,
-        "total_plays": total_plays
+        return {
+            "name": playlist_name,
+            "songs": songs,
+            "total_plays": total_plays
     }
 
 # =============================================================================
